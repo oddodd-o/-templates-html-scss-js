@@ -170,8 +170,10 @@
         align-items: center;
         height: 102px;
         padding: 0 50px;
-        font-size: 2rem;
-        font-weight: $font-bold;
+        font-size: 1.8rem;
+        &:hover {
+          text-decoration: none;
+        }
         span {
           position: relative;
           display: flex;
@@ -245,7 +247,6 @@
     &__btn {
       height: 57px;
       margin-right: 10px;
-      font-size: 2rem;
       text-transform: uppercase;
       &::after {
         content: "\f107";
@@ -277,14 +278,14 @@
     &::before {
       content: "\f002";
       @include lineAwesome;
-      font-size: 3.8rem;
+      font-size: 3rem;
     }
   }
   .all-menu {
     &::before {
       content: "\f0c9";
       @include lineAwesome;
-      font-size: 3.8rem;
+      font-size: 3rem;
     }
   }
 }
