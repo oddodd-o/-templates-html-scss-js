@@ -168,7 +168,6 @@ input[type=password] {
 .img-g {
   display: inline-block;
   overflow: hidden;
-  background: url(../../images/comm/img-comm.png) no-repeat;
   vertical-align: top;
 }
 
@@ -663,8 +662,11 @@ legend {
   }
 }
 @media screen and (min-width: 1024px) {
-  .slide-intro .swiper-slide img {
+  .slide-intro .swiper-slide img, .slide-intro .swiper-slide video {
+    width: 100%;
     height: 70vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .slide-intro .swiper-slide .text-area {
     width: 100%;
